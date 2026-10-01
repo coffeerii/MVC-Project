@@ -1,0 +1,23 @@
+@model IEnumerable<MVC_Project.Models.UserModel>
+
+@{
+    ViewData["Title"] = "MVC Member List";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<ul>
+    @foreach (var user in Model)
+    {
+        <li><strong>@user.Name</strong> - @user.Role</li>
+    }
+</ul>
+
+<h2>Add New Member</h2>
+<form asp-controller="User" asp-action="Create" method="post">
+    <div>
+        <input type="text" name="name" placeholder="Name" required />
+        <input type="text" name="role" placeholder="Role" required />
+        <button type="submit">Add Member</button>
+    </div>
+</form>
