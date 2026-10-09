@@ -1,0 +1,15 @@
+@{
+    var page = ViewContext.RouteData.Values["controller"]?.ToString() ?? "About";
+    string Active(string name) => page == name ? "active" : "";
+}
+@* Top bar: name, nav links (one per page), dark/light switch *@
+<header class="topbar">
+    <div class="topbar-inner">
+        <a class="brand" asp-controller="About" asp-action="Index">@ViewData["FullName"]</a>
+        <nav aria-label="Main">
+            <a class="@Active("About")"   asp-controller="About"   asp-action="Index">About</a>
+            <a class="@Active("Contact")" asp-controller="Contact" asp-action="Index">Contact</a>
+        </nav>
+        <button id="themeToggle" class="switch" role="switch" aria-checked="true" aria-label="Dark mode"><span class="knob"></span></button>
+    </div>
+</header>

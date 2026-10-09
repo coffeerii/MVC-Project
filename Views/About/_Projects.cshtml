@@ -1,0 +1,20 @@
+@model AboutModel
+@if (Model.Projects.Any())
+{
+    <div id="projects" class="container block">
+        <h2>Projects</h2>
+        <div class="cols four">
+            @foreach (var p in Model.Projects)
+            {
+                <article>
+                    <p class="year">@p.Year</p>
+                    <h3>
+                        @if (!string.IsNullOrWhiteSpace(p.Url)) { <a href="@p.Url" target="_blank" rel="noopener">@p.Name</a> }
+                        else { @p.Name }
+                    </h3>
+                    <p>@p.Description</p>
+                </article>
+            }
+        </div>
+    </div>
+}

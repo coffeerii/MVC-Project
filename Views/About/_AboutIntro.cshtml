@@ -1,0 +1,8 @@
+@model AboutModel
+<div class="container two-col about-intro">
+    <div>
+        <h2>About me</h2>
+        <p class="lead">@Model.IntroText</p>
+    </div>
+    @await Html.PartialAsync("_Photo", new PhotoModel(Model.IntroImage, "photo about-photo", "About me"))
+</div>

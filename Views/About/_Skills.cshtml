@@ -1,0 +1,17 @@
+@model AboutModel
+@if (Model.Skills.Any())
+{
+    <div id="skills" class="container block skills">
+        @await Html.PartialAsync("_Photo", new PhotoModel(Model.SkillsImage, "photo pill", "Skills"))
+        <div>
+            <h2>Skills</h2>
+            @foreach (var s in Model.Skills)
+            {
+                <div class="skill-row">
+                    <div class="bar" role="img" aria-label="@s.Name proficiency @s.Level percent"><span style="--w:@(s.Level)%"></span></div>
+                    <span class="skill-name">@s.Name</span>
+                </div>
+            }
+        </div>
+    </div>
+}

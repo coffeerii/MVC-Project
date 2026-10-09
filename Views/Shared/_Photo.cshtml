@@ -1,0 +1,9 @@
+@model PhotoModel
+@if (!string.IsNullOrWhiteSpace(Model.Path))
+{
+    <img class="@Model.Css" src="@Model.Path" alt="@Model.Alt" loading="lazy" />
+}
+else
+{
+    <div class="@Model.Css ph" role="img" aria-label="Photo placeholder"></div>
+}

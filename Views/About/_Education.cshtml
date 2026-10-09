@@ -1,0 +1,17 @@
+@model AboutModel
+@if (Model.Educations.Any())
+{
+    <div id="education" class="container block">
+        <h2>Education</h2>
+        <div class="cols">
+            @foreach (var e in Model.Educations)
+            {
+                <article>
+                    <p class="year">@e.Year</p>
+                    <h3>@e.School</h3>
+                    <p>@e.Description</p>
+                </article>
+            }
+        </div>
+    </div>
+}

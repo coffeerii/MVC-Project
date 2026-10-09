@@ -1,0 +1,25 @@
+@model AboutModel
+@if (Model.Experiences.Any())
+{
+    <div id="experience" class="container block exp">
+        <div>
+            <h2>Work experience</h2>
+            <div class="cols">
+                @foreach (var x in Model.Experiences)
+                {
+                    <article>
+                        <p class="year">@x.Year</p>
+                        <h3>@x.Company</h3>
+                        <p>@x.Description</p>
+                    </article>
+                }
+            </div>
+        </div>
+        <div class="exp-photos">
+            @foreach (var img in Model.ExperienceImages)
+            {
+                @await Html.PartialAsync("_Photo", new PhotoModel(img, "photo exp-photo", "Work photo"))
+            }
+        </div>
+    </div>
+}

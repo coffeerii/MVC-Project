@@ -1,0 +1,12 @@
+@model AboutModel
+@{
+    ViewData["Title"] = $"About - {ViewData["FullName"]}";
+}
+@* About page = these parts, in order. Open each file to edit that part. *@
+<section class="section">
+    <partial name="_AboutIntro"     model="Model" />
+    <partial name="_Education"      model="Model" />
+    <partial name="_Skills"         model="Model" />
+    <partial name="_WorkExperience" model="Model" />
+    <partial name="_Projects"       model="Model" />
+</section>
