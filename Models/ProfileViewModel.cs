@@ -1,6 +1,6 @@
 namespace PortfolioApp.Models;
 
-// The whole page = your name + three separate parts.
+// The whole page 
 public class ProfileViewModel
 {
     public string FullName { get; set; } = "";
