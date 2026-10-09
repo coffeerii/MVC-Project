@@ -1,8 +1,260 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-}
+﻿<!-- intro
+================================================== -->
+<section id="intro" class="s-intro">
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <div class="row">
+        <div class="column lg-12 s-intro__content">
+
+            <div class="s-intro__text">
+                <h1 class="s-intro__text-huge animate-on-load">
+                    Tori
+                </h1>
+                <h3 class="animate-on-load">CS Student & QA Intern</h3>
+            </div>
+
+            <div class="s-intro__bg"></div>
+
+        </div>
+    </div>
+
+</section> <!-- end s-intro -->
+
+<!-- about
+================================================== -->
+<section id="about" class="s-about">
+
+    <div class="s-about__block s-about__intro">
+
+        <div class="row">
+            <div class="column lg-12">
+                <h2 class="text-pretitle animate-on-load">About Me</h2>
+
+                <p class="attention-getter animate-on-load">
+                    Hi! I'm <strong>Ma. Victoria C. Narte</strong>, a Computer Science student at the Polytechnic University of the Philippines with hands-on experience in quality assurance, AI backend engineering, and full-stack software development.
+                </p>
+            </div>
+        </div>
+
+    </div> <!-- end s-about__intro -->
+
+
+    <div class="s-about__block s-about__career">
+
+        <div class="row s-about__career-header">
+            <div class="column lg-12">
+                <h2 class="text-pretitle">Resume</h2>
+
+                <p class="text-huge-title">
+                    Here is my education, experience, & technical skill set.
+                </p>
+            </div>
+        </div>
+
+        <div class="row s-about__timeline" data-animate-block>
+            <!-- Experience Timeline -->
+            <div class="column lg-6 stack-on-900 s-about__timeline-section" data-animate-el>
+
+                <h2 class="text-subtitle">
+                    Experience
+                </h2>
+
+                <div class="timeline">
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <h4 class="timeline__title">EastWest Bank</h4>
+                            <h5 class="timeline__meta">QA Intern</h5>
+                            <p class="timeline__timeframe">Present</p>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>Assisting in software quality assurance, testing protocols, and test execution to ensure application reliability and alignment with functional specifications.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <h4 class="timeline__title">Flyrank AI</h4>
+                            <h5 class="timeline__meta">Backend AI Engineering Intern</h5>
+                            <p class="timeline__timeframe">July 2026 - August 2026</p>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>Designed and reviewed API contracts, endpoints, payloads, and error handling for AI workflows. Formulated structured prompt schemas, worked with retrieval/grounding concepts, and conducted failure-mode analysis and verification.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <h4 class="timeline__title">PUP ASCII</h4>
+                            <h5 class="timeline__meta">Assistant Executive Secretary</h5>
+                            <p class="timeline__timeframe">2025 - 2026</p>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>Coordinated comprehensive testing and validation protocols for organizational initiatives, ensuring compliance with standards and supporting technical system reviews.</p>
+                        </div>
+                    </div>
+
+                </div> <!-- end timeline -->
+
+            </div> <!-- end s-about__timeline-section -->
+
+            <!-- Education Timeline -->
+            <div class="column lg-6 stack-on-900 s-about__timeline-section" data-animate-el>
+
+                <h2 class="text-subtitle">
+                    Education
+                </h2>
+
+                <div class="timeline">
+
+                    <div class="timeline__block">
+                        <div class="timeline__bullet"></div>
+                        <div class="timeline__header">
+                            <h4 class="timeline__title">Polytechnic University of the Philippines</h4>
+                            <h5 class="timeline__meta">Bachelor of Science in Computer Science</h5>
+                            <p class="timeline__timeframe">September 2024 - Present</p>
+                        </div>
+                        <div class="timeline__desc">
+                            <p>Awarded <strong>President's Lister</strong>. Relevant coursework includes Object Oriented Programming, Information Management, Data Structures & Algorithms, Design & Analysis of Algorithms, Data Communications & Networking, and Operating Systems.</p>
+                        </div>
+                    </div>
+
+                </div> <!-- end timeline -->
+
+            </div> <!-- end s-about__timeline-section -->
+
+        </div> <!-- end about__timeline -->
+
+        <!-- Skills Section -->
+        <div class="row s-about__skills" data-animate-block>
+            <div class="column lg-12" data-animate-el>
+
+                <h2 class="text-subtitle">
+                    Skills & Technical Expertise
+                </h2>
+
+                <ul class="skill-bars">
+                    <li>
+                        <div class="progress percent90"></div>
+                        <strong>Python & SQL</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent85"></div>
+                        <strong>C & Java</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent85"></div>
+                        <strong>JavaScript & TypeScript</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent80"></div>
+                        <strong>React & Next.js</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent80"></div>
+                        <strong>Supabase, Prisma & Firebase</strong>
+                    </li>
+                    <li>
+                        <div class="progress percent75"></div>
+                        <strong>Git, Docker & CI/CD</strong>
+                    </li>
+                </ul>
+
+            </div>
+        </div> <!-- end s-about__skills -->
+
+    </div> <!-- end s-about__career -->
+
+</section> <!-- end s-about -->
+
+
+<!-- works
+================================================== -->
+<section id="works" class="s-works">
+
+    <div class="row">
+        <div class="column lg-12">
+            <h2 class="text-pretitle">Selected Projects</h2>
+
+            <p class="text-huge-title">
+                Key software engineering and web application projects.
+            </p>
+        </div>
+    </div>
+
+    <div class="row folio-list block-lg-one-half block-stack-on-550" data-animate-block>
+        <div class="row g-4">
+
+            <!-- Project 1: Ligtas-Larga -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Ligtas-Larga</h5>
+                        <p class="card-text">Crowdsourced navigation platform in Metro Manila for accessibility hazards and real-time hazard reporting using dynamic routing and AI verification[cite: 5].</p>
+                        <div class="mb-3">
+                            <span class="badge bg-primary">Next.js</span>
+                            <span class="badge bg-secondary">TypeScript</span>
+                            <span class="badge bg-success">Supabase</span>
+                            <span class="badge bg-info">Google Maps API</span>[cite: 5]
+                        </div>
+                        <a href="https://github.com/nartevictoria" class="btn btn-outline-dark btn-sm" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Sintang Iskolar Database -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Sintang Iskolar Database</h5>
+                        <p class="card-text">Scholarship database web application built for organizing scholar information, schema management, database testing, and automated maintenance workflow.</p>
+                        <div class="mb-3">
+                            <span class="badge bg-primary">Python</span>
+                            <span class="badge bg-secondary">Flask</span>
+                            <span class="badge bg-success">SQL</span>
+                            <span class="badge bg-dark">Vercel</span>
+                        </div>
+                        <a href="https://github.com/nartevictoria" class="btn btn-outline-dark btn-sm" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Botika Finder -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Botika Finder</h5>
+                        <p class="card-text">Web-based pharmacy locator helping users find nearby botika services with responsive map components and Supabase data management[cite: 5].</p>
+                        <div class="mb-3">
+                            <span class="badge bg-primary">React</span>
+                            <span class="badge bg-secondary">TypeScript</span>
+                            <span class="badge bg-info">Vite</span>
+                            <span class="badge bg-success">Supabase</span>[cite: 5]
+                        </div>
+                        <a href="https://github.com/nartevictoria" class="btn btn-outline-dark btn-sm" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Automated Linear System Solver -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title font-weight-bold">Automated Linear System Solver</h5>
+                        <p class="card-text">Interactive web tool that computes solutions to systems of linear equations by processing coefficient matrices into functional algorithms[cite: 5].</p>
+                        <div class="mb-3">
+                            <span class="badge bg-primary">Python</span>
+                            <span class="badge bg-secondary">JavaScript</span>
+                            <span class="badge bg-info">HTML/CSS</span>[cite: 5]
+                        </div>
+                        <a href="https://github.com/nartevictoria" class="btn btn-outline-dark btn-sm" target="_blank">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div> <!-- folio-list -->
+
+</section> <!-- end s-works -->
