@@ -14,24 +14,14 @@
  * ------------------------------------------------------------------- */
 :root {
 
-    /* color-1(#5F9295)
-     * color-2(#2D2327)
-     */
-    --color-1                      : hsla(183, 22%, 48%, 1);
-    --color-2                      : hsla(336, 13%, 16%, 1);
-
-    /* theme color variations
-     */
-    --color-1-lighter              : hsla(183, 22%, 68%, 1);
-    --color-1-light                : hsla(183, 22%, 58%, 1);
-    --color-1-dark                 : hsla(183, 22%, 38%, 1);
-    --color-1-darker               : hsla(183, 22%, 28%, 1);
-
-    --color-2-lighter              : hsla(336, 13%, 36%, 1);
-    --color-2-light                : hsla(336, 13%, 26%, 1);
-    --color-2-dark                 : hsla(336, 13%, 10%, 1);
-    --color-2-darker               : hsla(336, 13%, 5%, 1);
-
+   --color-bg          : #f4effa; /* Very soft lavender background */
+    --color-bg-alt      : #e8dcf5; /* Alternate section light purple */
+    --color-gray-4      : #d2beea; /* Accent card/block background */
+    
+    /* Primary Accent Color (Dark Purple matching the 'V' border) */
+    --color-primary     : #4a2c70; 
+    --color-primary-dark: #331d50;
+    
     /* feedback colors
      * color-error(#ffd1d2), color-success(#c8e675), 
      * color-info(#d7ecfb), color-notice(#fff099)
